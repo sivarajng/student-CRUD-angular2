@@ -1,0 +1,342 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	padding:0;
+	background-color:#eaeaea;
+}
+header {
+	background-color: #0065a5;
+	height: 4vw;
+	z-index: 1024;
+}
+a:hover, a:focus {
+	text-decoration:none;
+	color:#fff;
+}
+header a {
+	font-size:1.4vw;
+	color: #fff;
+	padding: 0;
+	margin: 1vw 0 0 2vw;
+	display: inline-block;
+}
+header span {
+	border-left: 1px solid #fff;
+	padding: 0 0 0 0.7vw;
+	font-size: 1vw;
+}
+nav .brand-logo {
+	font-size: 1.4rem;
+	margin-left: 1rem;
+}
+.introduction {
+	padding-top: 5rem;
+	text-align: center;
+	margin-bottom: 6rem;
+}
+.introduction img.logo {
+	margin-left: -0.75rem;
+	margin-bottom: 2rem;
+	width: 100%;
+	max-width: 256px;
+}
+.card-content.code {
+	padding: 0;
+}
+ pre[class*="language-"] {
+	 position: relative;
+	 padding: 25px 12px 7px 12px !important;
+	 border: solid 1px rgba(51, 51, 51, 0.12);
+}
+ pre[class*="language-"]:before {
+	 padding: 1px 5px;
+	 background: #e8e6e3;
+	 top: 0;
+	 left: 0;
+	 font-size: .9rem;
+	 border: solid 1px rgba(51, 51, 51, 0.12);
+	 border-top: none;
+	 border-left: none;
+}
+.card-content.code pre {
+	border:none;
+	background: #fff;
+}
+.toc-wrapper {
+	display: inline-block;
+}
+.small {
+	font-size: 12px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.brand-logo .small {
+	top: 16px;
+	left: 0px;
+	position: absolute;
+}
+footer {
+	background-color: #3a3a3a;
+	position: absolute !important;
+	bottom: 0;
+	width:100%;
+}
+.copy {
+	color: #ffffff;
+	padding: 1vw 2vw;
+	text-align: right;
+	font-weight: 300;
+}
+ul.stepper.horizontal .step .step-title:before {
+	background-color: #e8e8e8 !important;
+	color:#8a8a8a !important;
+}
+.blue-btn {
+	background-color: #0065a3;
+	color: #ffffff;
+	font-size: 10px;
+	text-transform: none;
+	width: 105px;
+	font-weight:400;
+	padding:0 5px;
+	margin-left: 10px !important;
+}
+.white-btn {
+	padding:0 5px;
+	background-color: #fff;
+	color: #0065a5;
+	border: 1px solid #0065a5;
+	font-size: 10px;
+	text-transform: none;
+	width: 105px;
+	font-weight:400;
+}
+.select-text {
+	color: #454545;
+	border: 1px solid #aeaeae;
+	padding: 5px;
+	margin-top: 12px;
+	display: inline-block;
+	width: 98px;
+	text-align: center;
+	font-size: 12px;
+}
+.btn:hover, .btn-large:hover, .btn:focus, .btn-large:focus, .btn-floating:focus {
+	background-color: #0065a3;
+}
+}
+.btn:hover, .btn-large:hover {
+	background-color:#0065a3;
+}
+ul.stepper .step-title:hover {
+	background-color: transparent !important;
+}
+.login {
+	width: 550px;
+	background-color: #fff;
+	padding:3% 10% 2%;
+	margin: 10% auto;
+}
+.login h1 {
+	font-size: 26px;
+	color: #0065a5;
+	text-align: center;
+	font-weight: 400;
+	margin: 0;
+}
+.row {
+	margin-bottom:10px;
+}
+.login-btn {
+	width: 115px;
+	margin: 0 auto;
+}
+.switch label input[type=checkbox]:checked + .lever {
+	background-color: rgba(0, 101, 163, 0.36);
+}
+.input-field label {
+	color: #0065a5;
+	font-size:14px;
+}
+.input-field {
+	margin:0 !important;
+}
+
+.switch, .switch * {
+	margin-bottom:10px;
+}
+.select-dropdown li {
+	width:auto !important;
+}
+.content-box {
+	 border-bottom: 1px solid #eaeaea;
+    padding: 0px 0 10px 0;
+    margin: 0px 0 15px 0;
+}
+.comp_scroll {
+	height:50px;
+	overflow-y: scroll;
+}
+.content-box .switch label .lever {
+	margin-left:0;
+}
+.static{
+	
+	position:static !important;
+}
+.input-field.col label {
+   font-size:12px ;
+   font-weight: 300;
+}
+.input-field label:not(.label-icon).active{
+      font-size: 14px !important;
+    color: #0065a5 !important;
+    font-weight: 400 !important;
+}
+ 
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+	width: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	 background-color: #dcdcdc;
+	 border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+@media only screen and (min-width: 993px) {
+.container {
+	width:774px;
+}
+.row .col.l10 {
+	 width: 100%;
+	 margin-left: auto;
+	 left: auto;
+	 right: auto;
+}
+.card-content ul.stepper.horizontal {
+	 margin-left: -24px;
+	 margin-right: -24px;
+	 padding-left: 15px;
+	 padding-right: 15px;
+	 overflow: hidden;
+}
+ul.stepper.horizontal .step.active .step-title:before, ul.stepper.horizontal .step.done .step-title:before {
+	 background-color: #f87904 !important;
+	 color:#ffffff !important;
+}
+ul.stepper.horizontal:before {
+	box-shadow: 0 4px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+}
+input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+	color: #0065a3;
+}
+ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]), input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, input[type=url].valid, input[type=url]:focus.valid, input[type=time].valid, input[type=time]:focus.valid, input[type=date].valid, input[type=date]:focus.valid, input[type=datetime].valid, input[type=datetime]:focus.valid, input[type=datetime-local].valid, input[type=datetime-local]:focus.valid, input[type=tel].valid, input[type=tel]:focus.valid, input[type=number].valid, input[type=number]:focus.valid, input[type=search].valid, input[type=search]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid {
+	 border-bottom: 1px solid #0065a3;
+	 -webkit-box-shadow: 0 1px 0 0 #0065a3;
+	 box-shadow: 0 1px 0 0 #0065a3;
+}
+ .label {
+	 color: #0065a3;
+	 font-size: 12px;
+	 font-weight: 400;
+	 position: relative;
+	 top: -3px;
+}
+.step-content h2 {
+	 color: #0065a5;
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    top: -3px;
+    margin: 0 0 5px 0;
+}
+.label-swipe , input {
+	color: #434343 ;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+.label-swipe{
+	color: #434343 !important;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+.aws li{
+	list-style-type:disc !important;
+	margin-left:20px;
+
+}	
+.aws-step{
+	padding-top:30px !important;
+	
+}
+ul.stepper.horizontal {
+	min-height:390px;
+}
+ul.stepper.horizontal .step {
+	height:60px !important;
+}
+ul.stepper.horizontal .step-content {
+	 height: calc(100% - 92px);
+	 top: 85px;
+	 overflow:hidden;
+}
+ul.stepper.horizontal:before {
+	min-height: 60px;
+}
+.section {
+	 padding-top: 3rem;
+	 padding-bottom:1rem;
+}
+ul.stepper.horizontal .step-actions {
+	padding:0px 40px 0px 40px;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+	 font-size: 14px;
+	 color: #8a8a8a;
+	 padding: 14px 16px;
+}
+ ul.stepper.horizontal .step-title {
+	 line-height: 60px;
+	 height: 60px;
+	 font-size: 10px;
+	 font-weight: 600 !important;
+	 padding: 0 12px 0 39px;
+}
+ul.stepper.horizontal li:nth-child(n) {
+	width:260px;
+}
+ul.stepper.horizontal li:nth-child(2n) {
+	width:385px;
+}
+ ul.stepper.horizontal .step .step-title:before {
+	 top: 15.5px;
+	 left: 6px;
+}
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+	margin : 0 0 30px 0 !important; 
+}
+.card .card-content {
+	padding: 0 24px 15px;
+	height:494px;
+}
+ul.stepper.horizontal:first-child {
+    margin-top: -24px;
+    height: 469px;
+}
+.card-content ul.stepper.horizontal .step-content {
+    padding-left: 40px;
+    padding-right: 40px;
+   
+}
+}

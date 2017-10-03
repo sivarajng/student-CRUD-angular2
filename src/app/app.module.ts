@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { AddComponent } from './add/add.component';
 
+import { CrudService } from './service/crud.service';
+
 import { routing }        from './route/app.routing';
 
 @NgModule({
@@ -27,7 +29,7 @@ import { routing }        from './route/app.routing';
     FormsModule,
     routing
   ],
-  providers: [],
+  providers: [CrudService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

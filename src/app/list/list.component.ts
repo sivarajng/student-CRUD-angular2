@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService } from '../service/crud.service';
 
 @Component({
   selector: 'app-list',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
-  constructor() { }
+  studentsList;
+  
+  studentCount=0;
+  constructor(private crudService: CrudService) {
+    this.studentsList = this.crudService.getStudentsList();
+     console.log("studentsList 4 ", this.studentsList);
+  }
 
   ngOnInit() {
+  }
+
+  ngAfterContentInit() {
+    this.studentsList = this.crudService.getStudentsList();
   }
 
 }

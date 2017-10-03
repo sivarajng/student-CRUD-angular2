@@ -1,4 +1,12 @@
-<p><a [routerLink]="['/']">home</a></p>
-<p><a [routerLink]="['/list']">list</a></p>
-<p><a [routerLink]="['/edit']">edit</a></p>
-<p><a [routerLink]="['/add']">add</a></p>
+<div class="navbar-fixed">
+    <nav class="blue darken-4">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo left"><b>SMS</b> | <span>Student Management System</span></a>
+            <ul id="nav-mobile" class="right">
+                <li routerLinkActive="active"><a [routerLink]="['/home']">Dashboard</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/list']">Students List</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/add']">Add Student Details</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
