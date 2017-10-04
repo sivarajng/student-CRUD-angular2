@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }    from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
-import { MaterializeModule } from "angular2-materialize";
+import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -14,7 +14,7 @@ import { AddComponent } from './add/add.component';
 
 import { CrudService } from './service/crud.service';
 
-import { routing }        from './route/app.routing';
+import { routing } from './route/app.routing';
 
 @NgModule({
   declarations: [
