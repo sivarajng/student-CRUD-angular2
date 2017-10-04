@@ -9,16 +9,16 @@ import { Router } from '@angular/router';
 })
 export class AddComponent implements OnInit {
 
-  student;
-  constructor(private crudService: CrudService,private router:Router) {
+  student: any;
+  constructor(private crudService: CrudService, private router: Router) {
     this.student = {
       id: 0
-      , firstName: ""
-      , lastName: ""
-      , department: ""
+      , firstName: ''
+      , lastName: ''
+      , department: ''
       , score: null
-      , email: ""
-      , address: ""
+      , email: ''
+      , address: ''
     };
 
   }
@@ -26,9 +26,10 @@ export class AddComponent implements OnInit {
   ngOnInit() {
   }
 
+  /* Call Add Student Service */
   addStudent() {
     this.student.id = Math.round(Math.random() * 1000000);
     this.crudService.addStudent(this.student);
-    setTimeout(() => { this.router.navigate(['/list']);alert("Successfully added") }, 500);
+    setTimeout(() => { this.router.navigate(['/list']); alert('Successfully added'); }, 500);
   }
 }

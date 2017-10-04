@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from '../service/crud.service';
-import { ActivatedRoute, Params,Router } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit',
@@ -9,26 +9,24 @@ import { ActivatedRoute, Params,Router } from '@angular/router';
 })
 export class EditComponent implements OnInit {
 
-  id;
-  studentsList;
-  student;
-  constructor(private crudService: CrudService, private activatedRoute: ActivatedRoute,private router:Router) {
+  id: number;
+  studentsList: Array<any>;
+  student: any;
+  constructor(private crudService: CrudService, private activatedRoute: ActivatedRoute, private router: Router) {
 
-    // subscribe to router event
+    /* subscribe to router query params*/
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       this.id = params['id'];
-      console.log("edit ", this.id);
     });
-
 
     this.student = {
       id: 0
-      , firstName: ""
-      , lastName: ""
-      , department: ""
+      , firstName: ''
+      , lastName: ''
+      , department: ''
       , score: null
-      , email: ""
-      , address: ""
+      , email: ''
+      , address: ''
     };
 
     this.studentsList = this.crudService.getStudentsList().filter(val => val.id == this.id);
@@ -36,38 +34,22 @@ export class EditComponent implements OnInit {
 
   }
 
-  ngOnChanges(){
-    this.student = this.studentsList[0];
-  }
-  ngAfterContentInit(){
-    this.student = this.studentsList[0];
-  }
-  ngAfterContentChecked(){
-    this.student = this.studentsList[0];
-  }
-  ngAfterViewInit(){
-    this.student = this.studentsList[0];
-  }
-  ngAfterViewChecked(){
-    this.student = this.studentsList[0];
-  }
-
-
   ngOnInit() {
-    // subscribe to router event
+
+    /* subscribe to router query params*/
     this.activatedRoute.queryParams.subscribe((params: Params) => {
       this.id = params['id'];
-      console.log("edit ", this.id);
     });
 
     this.studentsList = this.crudService.getStudentsList().filter(val => val.id == this.id);
     this.student = this.studentsList[0];
   }
 
+  /* Call Update Student Service */
   updateStudent(student) {
-    this.crudService.updateStudent(this.student || student);
 
-    setTimeout(() => { this.router.navigate(['/list']);alert("Successfully updated") }, 500);
+    this.crudService.updateStudent(this.student || student);
+    setTimeout(() => { this.router.navigate(['/list']); alert('Successfully updated'); }, 500);
 
   }
 }

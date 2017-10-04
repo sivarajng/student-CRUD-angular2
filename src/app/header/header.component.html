@@ -1,3 +1,4 @@
+
 <div class="navbar-fixed">
     <nav class="blue darken-4">
         <div class="nav-wrapper">
@@ -6,6 +7,7 @@
                 <li routerLinkActive="active"><a [routerLink]="['/home']">Dashboard</a></li>
                 <li routerLinkActive="active"><a [routerLink]="['/list']">Students List</a></li>
                 <li routerLinkActive="active"><a [routerLink]="['/add']">Add Student Details</a></li>
+                <li (click)="clearLocalStorage()"><a>Reset LocalStorage</a></li>
             </ul>
         </div>
     </nav>

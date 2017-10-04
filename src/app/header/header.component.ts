@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CrudService } from '../service/crud.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private crudService: CrudService) { }
 
   ngOnInit() {
+
+  }
+
+  /* Call clear the local storage Service */
+  clearLocalStorage() {
+
+    this.crudService.clearLocalStorage();
+    setTimeout(() => { alert('Successfully resetted LocalStorage'); location.reload(); }, 200);
+
   }
 
 }

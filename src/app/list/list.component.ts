@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CrudService } from '../service/crud.service';
 import { Router } from '@angular/router';
-// import { MaterializeAction } from 'angular2-materialize';
 
 @Component({
   selector: 'app-list',
@@ -10,29 +9,30 @@ import { Router } from '@angular/router';
 })
 export class ListComponent implements OnInit {
 
-  studentsList;
+  studentsList: Array<any>;
 
-  studentCount = 0;
   constructor(private crudService: CrudService, private router: Router) {
     this.studentsList = this.crudService.getStudentsList();
-    console.log("studentsList 4 ", this.studentsList);
   }
 
   ngOnInit() {
   }
 
-  ngAfterContentInit() {
+  AfterContentInit() {
     this.studentsList = this.crudService.getStudentsList();
   }
 
+  /* route to update Student page */
   editStudent(id) {
-    //this.crudService.edit();
     this.router.navigate(['/edit'], { queryParams: { id: id } });
   }
 
+  /* Call Delete Student  Service */
   deleteStudent(id) {
-     this.crudService.deleteStudent(id);
-    setTimeout(() => { this.studentsList = this.crudService.getStudentsList();alert("Successfully deleted") }, 500);
+
+    this.crudService.deleteStudent(id);
+    setTimeout(() => { this.studentsList = this.crudService.getStudentsList(); alert('Successfully deleted'); }, 500);
+
   }
 
 }

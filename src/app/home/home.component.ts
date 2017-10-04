@@ -9,8 +9,9 @@ import { CrudService } from '../service/crud.service';
 export class HomeComponent implements OnInit {
 
 
-  studentCount = 0;
+  studentCount: number;
   constructor(private crudService: CrudService) {
+    this.studentCount = 0;
   }
 
 
